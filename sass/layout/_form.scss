@@ -1,0 +1,25 @@
+.formulaire {
+    display: flex;
+    background-color: #EAEAEA;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 603px 25px 603px;
+    height: 3rem;
+    margin-top: 10px;
+}
+
+input:disabled {
+    background: transparent;
+    border: transparent;
+    height: 40px;
+
+    &::placeholder{
+    color: black;
+    font-size: 18px;
+}
+}
+
+.fa-map-marker-alt {
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
