@@ -1,0 +1,14 @@
+@mixin flexbox($justify-content: center, $text-align: center, $align-items: center) {
+	display: flex;
+	justify-content: $justify-content;
+	text-align: $text-align;
+	align-items: $align-items;
+}
+
+@mixin height-3rem {
+	height: 3rem;
+}
+
+@mixin font-18px {
+	font-size: 18px;
+}

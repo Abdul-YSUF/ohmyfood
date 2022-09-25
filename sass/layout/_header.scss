@@ -1,11 +1,15 @@
 .header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 2rem;
-    align-items: center;
-    margin-top: 10px;
+    @include flexbox;
+    height: 2.5rem;
+    margin-top: 15px;
     &__logo {
-        height: 2rem;
+        height: 2.5rem;
+    }
+    &__fleche-retour {
+        color: $color-black;
+        position: absolute;
+        left: 10%;
+        font-size: 25px;
+        margin-top: -15px;
     }
 }

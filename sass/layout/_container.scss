@@ -1,0 +1,13 @@
+.présentation {
+    @include flexbox;
+    flex-direction: column;
+    background-color: $color-background;
+    padding: 40px 0px 50px 0px;
+    &__titre {
+        margin-bottom: 15px;
+    }
+    &__sous-titre {
+        font-weight: 250;
+        @include font-18px;
+    }
+}
