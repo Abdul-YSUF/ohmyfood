@@ -1,6 +1,6 @@
 .formulaire {
     @include flexbox;
-    background-color: #EAEAEA;
+    background: $background-form;
     @include height-3rem;
     margin-top: 10px;
 }
@@ -9,11 +9,11 @@ input:disabled {
     background: transparent;
     border: transparent;
     @include height-3rem;
-
+    cursor: text;
     &::placeholder {
-    color: $color-black;
-    @include font-18px;
-}
+        color: $color-black;
+        @include font-18px;
+    }
 }
 
 .fa-map-marker-alt {

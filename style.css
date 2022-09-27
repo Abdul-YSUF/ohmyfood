@@ -24,7 +24,7 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: #EAEAEA;
+  background: linear-gradient(#CBCBCB -1%, #EAEAEA 7%);
   height: 3rem;
   margin-top: 10px;
 }
@@ -33,6 +33,7 @@ input:disabled {
   background: transparent;
   border: transparent;
   height: 3rem;
+  cursor: text;
 }
 input:disabled::placeholder {
   color: black;
@@ -59,6 +60,61 @@ input:disabled::placeholder {
 .présentation__sous-titre {
   font-weight: 250;
   font-size: 18px;
+}
+
+.fonctionnement {
+  margin-top: 50px;
+}
+.fonctionnement__choix {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+}
+.fonctionnement__étape {
+  background: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 28%;
+  border: none;
+  border-radius: 20px;
+  margin: 30px;
+  position: relative;
+  padding: 1.8rem;
+  z-index: 1;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px #E2E2E2;
+  transition: transform 300ms, background-color 300ms;
+}
+.fonctionnement__étape span {
+  width: 1.7em;
+  height: 1.7em;
+  font-size: 0.8em;
+  text-align: center;
+  color: white;
+  background-color: #9356DC;
+  padding: 0.3em;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.9em;
+}
+.fonctionnement__étape i {
+  color: #7D7D7D;
+  font-size: 22px;
+  margin-right: 20px;
+}
+.fonctionnement__étape p {
+  font-weight: 500;
+}
+.fonctionnement__étape:hover {
+  background: #f2eafb;
+  transform: scale(1.05);
+}
+.fonctionnement__étape:hover i {
+  color: #9356DC;
 }
 
 .footer {
@@ -94,7 +150,7 @@ input:disabled::placeholder {
 
 .fa-utensils, .fa-hands-helping {
   margin-right: 13px;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .btn {
@@ -108,9 +164,11 @@ input:disabled::placeholder {
   box-shadow: 0px 5px 10px #BBB;
   margin: 2rem auto 0 auto;
   cursor: pointer;
+  transition: transform 300ms, background-color 300ms;
 }
 .btn:hover {
   filter: brightness(1.1);
+  transform: scale(1.05);
 }
 
 * {
@@ -125,4 +183,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }

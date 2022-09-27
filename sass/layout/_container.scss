@@ -11,3 +11,52 @@
         @include font-18px;
     }
 }
+
+.fonctionnement {
+    margin-top: 50px;
+&__choix {
+    @include flexbox;
+    flex-direction: row;
+}
+&__étape {
+    background: $color-background;
+    @include flexbox;
+    width: 28%;
+    border: none;
+    border-radius: 20px;
+    margin: 30px;
+    position: relative;
+    padding: 1.8rem;
+    z-index: 1;
+    cursor: pointer;
+    box-shadow:0px 5px 10px $color-light-gray;
+    transition: transform 300ms, background-color 300ms;
+    & span {
+        width: 1.7em;
+        height: 1.7em;
+        font-size: 0.8em;
+        text-align: center;
+        color: $color-white;
+        background-color: $color-primaire;
+        padding: 0.3em ;
+        border-radius: 50%;
+        position: absolute;
+        top: -0.9em;   
+    }
+    & i {
+        color: $color-icons-fonctionnement;
+        font-size: 22px;
+        margin-right: 20px;
+    }
+    & p {
+        font-weight: 500;
+    }
+    &:hover {
+        background: lighten($color-primaire, 35%);
+        transform: scale(1.05);
+        & i {
+            color: $color-primaire;
+        }
+    }
+}
+}
