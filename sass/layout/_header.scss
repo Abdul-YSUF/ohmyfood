@@ -4,6 +4,9 @@
     margin-top: 15px;
     &__logo {
         height: 2.5rem;
+        @include breakpoints_mobile {
+            height: 1.6rem;
+        }
     }
     &__fleche-retour {
         color: $color-black;

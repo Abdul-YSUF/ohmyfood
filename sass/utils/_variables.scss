@@ -8,8 +8,20 @@ $color-background: #F6F6F6;
 $color-black: black;
 $color-gray: #EAEAEA;
 $color-form: #CBCBCB;
-$color-footer: #353535;
+$color-nuit: #353535;
 $color-light-gray: #E2E2E2;
 $color-icons-fonctionnement: #7D7D7D;
 
 $background-form:linear-gradient($color-form -1%, $color-gray 7%);
+
+$breakpoints_mobile: (
+  mobile: 320px
+);
+
+$breakpoints_tablette: (
+  tablette: 768px
+);
+
+$breakpoints_desktop: (
+  desktop: 1024px
+);

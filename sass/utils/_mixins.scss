@@ -5,10 +5,24 @@
 	align-items: $align-items;
 }
 
-@mixin height-3rem {
-	height: 3rem;
+@mixin coeur {
+	background: linear-gradient($color-primaire, $color-secondaire);
 }
 
-@mixin font-18px {
-	font-size: 18px;
+@mixin breakpoints_mobile {
+	@media screen and (min-width: map-get($breakpoints_mobile, mobile)) and (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin breakpoints_tablette {
+	@media screen and (min-width: map-get($breakpoints_tablette, tablette)) and (max-width: 1023px) {
+		@content;
+	}
+}
+
+@mixin breakpoints_desktop {
+	@media screen and (max-width: map-get($breakpoints_desktop, desktop)) {
+		@content;
+	}
 }

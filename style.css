@@ -11,6 +11,11 @@
 .header__logo {
   height: 2.5rem;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header__logo {
+    height: 1.6rem;
+  }
+}
 .header__fleche-retour {
   color: black;
   position: absolute;
@@ -26,25 +31,35 @@
   align-items: center;
   background: linear-gradient(#CBCBCB -1%, #EAEAEA 7%);
   height: 3rem;
-  margin-top: 10px;
 }
-
-input:disabled {
+.formulaire input:disabled {
   background: transparent;
   border: transparent;
   height: 3rem;
   cursor: text;
 }
-input:disabled::placeholder {
+.formulaire input:disabled::placeholder {
   color: black;
   font-size: 18px;
 }
-
-.fa-map-marker-alt {
-  margin-right: 20px;
-  margin-bottom: 5px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .formulaire input:disabled::placeholder {
+    font-size: 14px;
+  }
 }
 
+.fa-map-marker-alt {
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .fa-map-marker-alt {
+    margin-bottom: 3px;
+    font-size: 15px;
+  }
+}
+
+/*Présentation*/
 .présentation {
   display: flex;
   justify-content: center;
@@ -55,13 +70,20 @@ input:disabled::placeholder {
   padding: 40px 0px 50px 0px;
 }
 .présentation__titre {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .présentation__sous-titre {
-  font-weight: 250;
+  font-weight: 295;
   font-size: 18px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .présentation__sous-titre {
+    font-size: 17px;
+    width: 90%;
+  }
+}
 
+/*Fonctionnement*/
 .fonctionnement {
   margin-top: 50px;
 }
@@ -71,6 +93,16 @@ input:disabled::placeholder {
   text-align: center;
   align-items: center;
   flex-direction: row;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .fonctionnement__choix {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+  }
 }
 .fonctionnement__étape {
   background: #F6F6F6;
@@ -87,70 +119,212 @@ input:disabled::placeholder {
   z-index: 1;
   cursor: pointer;
   box-shadow: 0px 5px 10px #E2E2E2;
-  transition: transform 300ms, background-color 300ms;
+  transition: transform 400ms, background-color 200ms;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .fonctionnement__étape {
+    width: 90%;
+    margin: 12px 0px 12px 0px;
+    padding: 1.4rem;
+  }
 }
 .fonctionnement__étape span {
-  width: 1.7em;
-  height: 1.7em;
-  font-size: 0.8em;
+  width: 1.7rem;
+  height: 1.7rem;
+  font-size: 0.8rem;
   text-align: center;
   color: white;
   background-color: #9356DC;
-  padding: 0.3em;
+  padding: 0.4rem;
   border-radius: 50%;
   position: absolute;
-  top: -0.9em;
+  top: -0.9rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .fonctionnement__étape span {
+    left: -0.8rem;
+    margin-top: 45px;
+    width: 1.4rem;
+    height: 1.4rem;
+    font-size: 0.7rem;
+    padding: 0.3rem;
+    top: -1.4rem;
+  }
 }
 .fonctionnement__étape i {
   color: #7D7D7D;
   font-size: 22px;
   margin-right: 20px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .fonctionnement__étape i {
+    margin-right: 20px;
+    margin-left: -20px;
+    font-size: 18px;
+  }
+}
 .fonctionnement__étape p {
+  font-size: 18px;
   font-weight: 500;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .fonctionnement__étape p {
+    font-size: 15px;
+  }
 }
 .fonctionnement__étape:hover {
   background: #f2eafb;
   transform: scale(1.05);
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .fonctionnement__étape:hover {
+    transform: none;
+  }
+}
 .fonctionnement__étape:hover i {
   color: #9356DC;
 }
 
+/*Restaurants*/
+.restaurants {
+  background: #F6F6F6;
+  padding: 3rem 0rem 2rem 0rem;
+  margin-top: 50px;
+}
+.restaurants__cartes {
+  margin-top: 20px;
+}
+.restaurants__cartes .listes_restaurants {
+  color: black;
+  height: 290px;
+  background: white;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  transition: transform 500ms;
+  position: relative;
+  box-shadow: 0px 5px 18px -7px #BBB;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .restaurants__cartes .listes_restaurants {
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 210px;
+  }
+}
+.restaurants__cartes .listes_restaurants:hover {
+  transform: scale(1.05);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .restaurants__cartes .listes_restaurants:hover {
+    transform: none;
+  }
+}
+.restaurants__cartes img {
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-position: 50% 65%;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .restaurants__cartes img {
+    height: 140px;
+  }
+}
+.restaurants__cartes .déscription_restaurants {
+  position: relative;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .restaurants__cartes .déscription_restaurants {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}
+.restaurants__cartes .déscription_restaurants p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .restaurants__cartes .déscription_restaurants p {
+    font-size: 0.9rem;
+  }
+}
+.restaurants__cartes .déscription_restaurants .fa-heart {
+  position: absolute;
+  font-size: 1.6rem;
+  right: 20px;
+  top: 20px;
+  transition: color 600ms linear;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .restaurants__cartes .déscription_restaurants .fa-heart {
+    font-size: 1.3rem;
+    top: 5px;
+  }
+}
+.restaurants__cartes .déscription_restaurants .fa-heart:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+}
+.restaurants__cartes .déscription_restaurants h4 {
+  position: absolute;
+  background: #99E2D0;
+  padding: 5px 12px 5px 12px;
+  right: 10px;
+  margin-top: 5px;
+  margin-right: 3px;
+  top: -200px;
+  color: #2c9c81;
+  font-weight: bold;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .restaurants__cartes .déscription_restaurants h4 {
+    top: -148px;
+  }
+}
+
 .footer {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
   flex-direction: column;
   background-color: #353535;
-  padding: 40px 0px 60px 0px;
-  margin-top: 200px;
+  padding: 25px 0px 20px 0px;
 }
 .footer__logo {
-  height: 2.5rem;
-  margin-bottom: 80px;
+  height: 1.3rem;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer__logo {
+    height: 1rem;
+  }
 }
 
 .liste {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-bottom: 10px;
-  margin-left: 130px;
+  flex-direction: column;
 }
 .liste__footer {
   color: white;
-  margin-right: 130px;
-  font-size: 1.1rem;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .liste__footer {
+    font-size: 0.9rem;
+  }
 }
 
 .fa-utensils, .fa-hands-helping {
-  margin-right: 13px;
-  font-size: 1rem;
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .fa-utensils, .fa-hands-helping {
+    font-size: 0.8rem;
+  }
 }
 
 .btn {
@@ -162,13 +336,25 @@ input:disabled::placeholder {
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 5px 10px #BBB;
-  margin: 2rem auto 0 auto;
+  margin: 1.6rem auto 0 auto;
   cursor: pointer;
   transition: transform 300ms, background-color 300ms;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btn {
+    width: 12rem;
+    font-size: 14px;
+    padding: 0.9rem;
+  }
 }
 .btn:hover {
   filter: brightness(1.1);
   transform: scale(1.05);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btn:hover {
+    transform: none;
+  }
 }
 
 * {
@@ -185,9 +371,18 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  width: 70%;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
 h2 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+h3 {
+  font-size: 16px;
 }
