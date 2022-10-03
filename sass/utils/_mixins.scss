@@ -7,22 +7,23 @@
 
 @mixin coeur {
 	background: linear-gradient($color-primaire, $color-secondaire);
-}
-
-@mixin breakpoints_mobile {
-	@media screen and (min-width: map-get($breakpoints_mobile, mobile)) and (max-width: 767px) {
-		@content;
-	}
+	background: -webkit-linear-gradient($color-primaire, $color-secondaire);
+	background: -moz-linear-gradient($color-primaire, $color-secondaire);
+	background-clip: text;
+	-moz-background-clip: text;
+    -webkit-background-clip: text;
+	color: transparent;
+	font-weight: 600;
 }
 
 @mixin breakpoints_tablette {
-	@media screen and (min-width: map-get($breakpoints_tablette, tablette)) and (max-width: 1023px) {
+	@media screen and (min-width: map-get($breakpoints_tablette, tablette)){
 		@content;
 	}
 }
 
 @mixin breakpoints_desktop {
-	@media screen and (max-width: map-get($breakpoints_desktop, desktop)) {
+	@media screen and (min-width: map-get($breakpoints_desktop, desktop)) {
 		@content;
 	}
 }

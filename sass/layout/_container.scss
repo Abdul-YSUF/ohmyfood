@@ -9,10 +9,10 @@
     }
     &__sous-titre {
         font-weight: 295;
-        font-size: 18px;
-        @include breakpoints_mobile {
-            font-size: 17px;
-            width: 90%;
+        font-size: 17px;
+        width: 90%;
+        @include breakpoints_desktop {
+            font-size: 18px;
         }
     }
 }
@@ -22,145 +22,133 @@
     margin-top: 50px;
 &__choix {
     @include flexbox;
-    flex-direction: row;
-        @include breakpoints_mobile {
-            @include flexbox;
-            flex-direction: column;
+    flex-direction: column;
+        @include breakpoints_desktop {
+            flex-direction: row;
             margin-left: 10px;
         }
 }
 &__étape {
     background: $color-background;
     @include flexbox;
-    width: 28%;
+    width: 90%;
     border: none;
     border-radius: 20px;
-    margin: 30px;
+    margin: 12px 0px 12px 0px;
     position: relative;
-    padding: 1.8rem;
-    z-index: 1;
+    padding: 1.4rem;
     cursor: pointer;
     box-shadow:0px 5px 10px $color-light-gray;
-    transition: transform 400ms, background-color 200ms;
-        @include breakpoints_mobile {
-            width: 90%;
-            margin: 12px 0px 12px 0px;
-            padding: 1.4rem;
+    transition: transform 400ms, background-color 300ms;
+        @include breakpoints_desktop {
+            width: 28%;
+            margin: 30px;
+            padding: 1.8rem;
         }
     & span {
-        width: 1.7rem;
-        height: 1.7rem;
-        font-size: 0.8rem;
+        width: 1.4rem;
+        height: 1.4rem;
+        font-size: 0.7rem;
         text-align: center;
         color: $color-white;
         background-color: $color-primaire;
-        padding: 0.4rem ;
+        padding: 0.3rem ;
         border-radius: 50%;
         position: absolute;
-        top: -0.9rem;   
-            @include breakpoints_mobile {
-                left: -0.8rem;
-                margin-top: 45px;
-                width: 1.4rem;
-                height: 1.4rem;
-                font-size: 0.7rem;
-                padding: 0.3rem;
-                top: -1.4rem;
-            }
+        left: -0.8rem; 
     }
     & i {
         color: $color-icons-fonctionnement;
-        font-size: 22px;
+        font-size: 18px;
         margin-right: 20px;
-        @include breakpoints_mobile {
-            margin-right: 20px;
-            margin-left: -20px;
-            font-size: 18px;
-        }
     }
     & p {
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 500;
-        @include breakpoints_mobile {
-            font-size: 15px;
-        }
     }
     &:hover {
         background: lighten($color-primaire, 35%);
-        transform: scale(1.05);
-        @include breakpoints_mobile {
-            transform: none;
+        transform: none;
+        @include breakpoints_desktop {
+            transform: scale(1.05);
         }
         & i {
             color: $color-primaire;
         }
     }
-}
+  }
 }
 
 /*Restaurants*/
 .restaurants {
 	background: $color-background;
 	padding: 3rem 0rem 2rem 0rem;
-    margin-top: 50px;
+  margin-top: 50px;
+  @include breakpoints_tablette {
+    padding: 3rem 0rem 2.5rem 0rem;
+  }
+
 	&__cartes {
 		margin-top: 20px;
+    @include breakpoints_tablette {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: -5px;
+    }
 		.listes_restaurants {
-			color: $color-black;
-			height: 290px;
+      flex: 1 1 40%;
+			height: 220px;
 			background: $color-white;
 			margin-bottom: 25px;
 			border-radius: 15px;
 			transition: transform 500ms;
 			position: relative;
 			box-shadow: 0px 5px 18px -7px $color-shadow;
-            @include breakpoints_mobile {
-                margin-right: 10px;
-                margin-left: 10px;
-                height: 210px;
-            }
-			&:hover {
-				transform: scale(1.05);
-                @include breakpoints_mobile {
-                    transform: none;
-                }
-			}
+      margin-right: 15px;
+      margin-left: 15px;
+      @include breakpoints_tablette {
+        height: 230px;
+        margin: 15px;
+      }
+      @include breakpoints_desktop {
+        height: 290px;
+        margin: 20px;
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
 		}
 		img {
 			width: 100%;
-			height: 205px;
+			height: 150px;
 			object-fit: cover;
 			border-top-left-radius: 15px;
 			border-top-right-radius: 15px;
 			object-position: 50% 65%;
-            @include breakpoints_mobile {
-                height: 140px;
-            }
+      @include breakpoints_tablette {
+        height: 160px;
+      }
+      @include breakpoints_desktop {
+      height: 220px;
+      }
 		}
 		.déscription_restaurants {
 			position: relative;
-            @include breakpoints_mobile {
-                margin-top: 10px;
-                margin-left: 10px;
-            }
+      color: $color-black;
+      margin-left: 15px;
+      margin-top: 10px;
 			p {
 				margin-top: 5px;
-				font-size: 1.1rem;
+				font-size: 0.9rem;
 				font-weight: 300;
-                @include breakpoints_mobile {
-                    font-size: 0.9rem;
-                }
 			}
 			.fa-heart {
 				position: absolute;
-				font-size: 1.6rem;
+				font-size: 1.4rem;
 				right: 20px;
-				top: 20px;
+				top: 10px;
 				transition: color 600ms linear;
-                @include breakpoints_mobile {
-                    font-size: 1.3rem;
-                    top: 5px;
-                }
 				&:hover {
 					@include coeur;
 				}
@@ -170,14 +158,16 @@
 				background: $color-tertiaire;
 				padding: 5px 12px 5px 12px;
 				right: 10px;
-                margin-top: 5px;
-                margin-right: 3px;
-				top: -200px;
+        margin-top: 5px;
+				top: -160px;
 				color: darken($color-tertiaire, 35%);
 				font-weight: bold;
-                @include breakpoints_mobile {
-                    top: -148px;
+                @include breakpoints_tablette {
+                    top: -170px;
                 }
+                @include breakpoints_desktop{
+                  top: -230px;
+              }
 			}
 		}
 	}
