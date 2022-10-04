@@ -18,6 +18,7 @@
 }
 
 .fa-map-marker-alt {
+    @include flexbox;
     font-size: 15px;
     margin-bottom: 3px;
     margin-right: 10px;

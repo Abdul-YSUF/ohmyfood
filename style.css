@@ -49,6 +49,10 @@
 }
 
 .fa-map-marker-alt {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   font-size: 15px;
   margin-bottom: 3px;
   margin-right: 10px;
