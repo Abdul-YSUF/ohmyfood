@@ -3,12 +3,16 @@
     flex-direction: column;
 	background-color: $color-nuit;
     padding: 25px 0px 20px 0px;
+    @include breakpoints_tablette {
+        @include flexbox;
+        padding: 50px;
+    }
 	&__logo {
 		height: 1rem;
 		margin-bottom: 20px;
         margin-left: 20px;
-        @include breakpoints_desktop {
-            height: 1.3rem;
+        @include breakpoints_tablette {
+            height: 1.5rem;
         }
 	}
 	}
@@ -16,12 +20,17 @@
 .liste {
     display: flex;
     flex-direction: column;
+    @include breakpoints_tablette {
+        flex-direction: row;
+        @include flexbox;
+        margin-top: 20px;
+    }
     &__footer {
         color: $color-white;
         margin-left: 20px;
         margin-bottom: 10px;
         font-size: 0.9rem;
-        @include breakpoints_desktop {
+        @include breakpoints_tablette {
             font-size: 1rem;
         }
     }
