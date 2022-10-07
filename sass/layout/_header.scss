@@ -4,7 +4,7 @@
     margin-top: 15px;
     &__logo {
         height: 1.6rem;
-        @include breakpoints_desktop {
+        @include breakpoints_tablette {
             height: 2rem;
         }
     }

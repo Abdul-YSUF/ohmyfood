@@ -2,12 +2,16 @@
     @include flexbox;
     background: $background-form;
     height: 3rem;
+    .fa-map-marker-alt {
+        font-size: 14px;
+        margin-left: 50px;
+    }
     input:disabled {
-        @include flexbox;
         background: transparent;
         border: none;
         height: 3rem;
         cursor: text;
+        margin-left: 20px;
         &::placeholder {
             color: $color-black;
             font-size: 14px;
@@ -16,8 +20,4 @@
             }
         }
     }
-}
-.fa-map-marker-alt {
-    font-size: 14px;
-    margin-bottom: 3px;
 }

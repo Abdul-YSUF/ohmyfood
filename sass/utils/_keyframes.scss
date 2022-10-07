@@ -1,0 +1,110 @@
+/*Spinner*/
+@keyframes chargement {
+    0% {background-color: $color-black; z-index: 1;}
+    50% {background-color: $color-gray; z-index: 1;}
+    90% {z-index: 1;}
+    100% {background-color: transparent; z-index: -1;}
+}
+@-webkit-keyframes chargement {
+    0% {background-color: $color-black; z-index: 1;}
+    50% {background-color: $color-gray; z-index: 1;}
+    90% {z-index: 1;}
+    100% {background-color: transparent; z-index: -1;}
+}
+@-moz-keyframes chargement {
+    0% {background-color: $color-black; z-index: 1;}
+    50% {background-color: $color-gray; z-index: 1;}
+    90% {z-index: 1;}
+    100% {background-color: transparent; z-index: -1;}
+}
+
+@keyframes logo_chargement {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+    0%{opacity: 1;}
+    25%, 35% {opacity: .3;}
+    35%, 60% {opacity: 1;}
+    60%, 70% {opacity: .3;}
+    70%, 95% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes logo_chargement {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+    0%{opacity: 1;}
+    25%, 35% {opacity: .3;}
+    35%, 60% {opacity: 1;}
+    60%, 70% {opacity: .3;}
+    70%, 95% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-moz-keyframes logo_chargement {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+    0%{opacity: 1;}
+    25%, 35% {opacity: .3;}
+    35%, 60% {opacity: 1;}
+    60%, 70% {opacity: .3;}
+    70%, 95% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes rotation_1 {
+    0% {opacity: 1; transform: rotate(0turn);}
+    85% {opacity: 1;}
+    100% {opacity: 0; transform: rotate(3turn);}
+}
+@-webkit-keyframes rotation_1 {
+    0% {opacity: 1; transform: rotate(0turn);}
+    85% {opacity: 1;}
+    100% {opacity: 0; transform: rotate(3turn);}
+}
+@-moz-keyframes rotation_1 {
+    0% {opacity: 1; transform: rotate(0turn);}
+    85% {opacity: 1;}
+    100% {opacity: 0; transform: rotate(3turn);}
+}
+
+@keyframes rotation_2 {
+    0% {opacity: 1; transform: rotate(0turn);}
+    85% {opacity: 1;}
+    100% {opacity: 0; transform: rotate(-3turn);}
+}
+@-webkit-keyframes rotation_2 {
+    0% {opacity: 1; transform: rotate(0turn);}
+    85% {opacity: 1;}
+    100% {opacity: 0; transform: rotate(-3turn);}
+}
+@-moz-keyframes rotation_2 {
+    0% {opacity: 1; transform: rotate(0turn);}
+    85% {opacity: 1;}
+    100% {opacity: 0; transform: rotate(-3turn);}
+}
+
+@keyframes rotation_3 {
+    0% {opacity: 1; transform: rotate(0turn);}
+    85% {opacity: 1;}
+    100% {opacity: 0; transform: rotate(-3turn);}
+}
+@-webkit-keyframes rotation_3 {
+    0% {opacity: 1; transform: rotate(0turn);}
+    85% {opacity: 1;}
+    100% {opacity: 0; transform: rotate(-3turn);}
+}
+@-moz-keyframes rotation_3 {
+    0% {opacity: 1; transform: rotate(0turn);}
+    85% {opacity: 1;}
+    100% {opacity: 0; transform: rotate(-3turn);}
+}
