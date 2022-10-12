@@ -247,6 +247,7 @@
     transform: rotate(-3turn);
   }
 }
+/*Fin de Spinner*/
 .header {
   display: flex;
   justify-content: center;
@@ -348,6 +349,7 @@
   animation: rotation_3 3s ease-in forwards;
 }
 
+/*Fin de spinner*/
 /*Présentation*/
 .présentation {
   display: flex;
@@ -372,6 +374,7 @@
   }
 }
 
+/*Fin de Présentation*/
 /*Fonctionnement*/
 .fonctionnement {
   margin-top: 50px;
@@ -459,7 +462,8 @@
   color: #9356DC;
 }
 
-/*Restaurants*/
+/*Fin de Fonctionnement*/
+/*Cartes Restaurants*/
 .restaurants {
   background: #F6F6F6;
   padding: 3rem 0rem 2rem 0rem;
@@ -565,7 +569,7 @@
     top: 240px;
   }
 }
-.restaurants__cartes .déscription_restaurants h4 {
+.restaurants__cartes .déscription_restaurants small {
   position: absolute;
   background: #99E2D0;
   padding: 5px 12px 5px 12px;
@@ -576,16 +580,17 @@
   font-weight: bold;
 }
 @media screen and (min-width: 768px) {
-  .restaurants__cartes .déscription_restaurants h4 {
+  .restaurants__cartes .déscription_restaurants small {
     top: -170px;
   }
 }
 @media screen and (min-width: 992px) {
-  .restaurants__cartes .déscription_restaurants h4 {
+  .restaurants__cartes .déscription_restaurants small {
     top: -230px;
   }
 }
 
+/*Fin de Cartes Restaurants*/
 .footer {
   display: flex;
   flex-direction: column;
@@ -594,10 +599,6 @@
 }
 @media screen and (min-width: 768px) {
   .footer {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
     padding: 50px;
   }
 }
@@ -609,6 +610,7 @@
 @media screen and (min-width: 768px) {
   .footer__logo {
     height: 1.5rem;
+    margin-left: 0px;
   }
 }
 
@@ -619,11 +621,8 @@
 @media screen and (min-width: 768px) {
   .liste {
     flex-direction: row;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
     margin-top: 20px;
+    justify-content: space-between;
   }
 }
 .liste__footer {
@@ -635,6 +634,7 @@
 @media screen and (min-width: 768px) {
   .liste__footer {
     font-size: 1rem;
+    margin-left: 0px;
   }
 }
 
@@ -648,6 +648,7 @@
   }
 }
 
+/*Button Explorer et Commande*/
 .btn {
   font-size: 14px;
   width: 12rem;
@@ -663,6 +664,7 @@
 }
 .btn:hover {
   filter: brightness(1.1);
+  box-shadow: 0px 5px 10px #353535;
   transform: none;
 }
 @media screen and (min-width: 992px) {
@@ -671,6 +673,7 @@
   }
 }
 
+/*Fin de Button Explorer et Commande*/
 * {
   margin: 0px;
   padding: 0px;
@@ -707,4 +710,163 @@ h2 {
 
 h3 {
   font-size: 16px;
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 100% 65%;
+}
+@media screen and (min-width: 768px) {
+  .image {
+    max-height: 450px;
+  }
+}
+
+.restaurant {
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0 0;
+  padding: 20px 0 100px 0px;
+  position: relative;
+  bottom: 40px;
+  margin-bottom: -40px;
+}
+.restaurant h5 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 26px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant h5 {
+    margin-left: 90px;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+}
+.restaurant .coeur {
+  position: absolute;
+  font-size: 26px;
+  right: 30px;
+  top: 35px;
+  transition: color 600ms linear;
+  cursor: pointer;
+}
+.restaurant .coeur:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: -moz-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .restaurant .coeur {
+    right: 90px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .catégorie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+.catégorie h3 {
+  margin: 20px 0px 15px 20px;
+  font-weight: 400;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  height: 25px;
+}
+@media screen and (min-width: 768px) {
+  .catégorie .column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .catégorie .column {
+    width: 30%;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: white;
+  margin: 0px 10px 20px 10px;
+  box-shadow: 0px 5px 18px -7px #BBB;
+  font-size: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu:hover .fa-check-circle {
+  transform: rotate(360deg);
+  transition-duration: 800ms;
+  width: 60px;
+  transition-duration: 1200ms;
+}
+.menu__listes {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu__nom {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 15px 0 0 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.menu__déscription {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 5px 0 15px 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.slide {
+  display: flex;
+}
+.slide__prix {
+  font-weight: 500;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+.slide__check-circle {
+  color: white;
+  background-color: #99E2D0;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 0 15px 15px 0;
+  width: 0;
+  height: 100%;
+}
+
+/*Survol Slide*/
+.menu:hover .slide__check-circle {
+  width: 60px;
+  transition-duration: 1200ms;
+}
+
+.commande {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 5px 0px 0 0;
 }
