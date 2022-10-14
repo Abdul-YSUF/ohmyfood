@@ -109,3 +109,37 @@
     100% {opacity: 0; transform: rotate(-3turn);}
 }
 /*Fin de Spinner*/
+
+/*Apparition Progressive Page Menu*/
+@keyframes délais {
+    0% {opacity: 0; transform: translateY(15%);}
+    100% {opacity: 1; transform: translateY(0%);}
+}
+
+@-webkit-keyframes délais {
+    0% {opacity: 0; transform: translateY(15%);}
+    100% {opacity: 1; transform: translateY(0%);}
+}
+
+@-moz-keyframes délais {
+    0% {opacity: 0; transform: translateY(15%);}
+    100% {opacity: 1; transform: translateY(0%);}
+}
+/*Fin d'Apparition Progressive Page Menu*/
+
+/*Apparition Progressive Button Commande*/
+@keyframes btn {
+    from {opacity: 0%; width: 0%;}
+    to {opacity: 100%; width: 100%;}
+}
+
+@-webkit-keyframes btn {
+    from {opacity: 0%; width: 0%;}
+    to {opacity: 100%; width: 100%;}
+}
+
+@-moz-keyframes btn {
+    from {opacity: 0%; width: 0%;}
+    to {opacity: 100%; width: 100%;}
+}
+/*Fin d'Apparition Progressive Button Commande*/
