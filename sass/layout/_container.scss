@@ -118,7 +118,7 @@
     }
     & p {
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 600;
     }
     &:hover {
         background: lighten($color-primaire, 35%);
@@ -141,7 +141,6 @@
   @include breakpoints_tablette {
     padding: 3rem 0rem 2.5rem 0rem;
   }
-
 	&__cartes {
 		margin-top: 20px;
     @include breakpoints_tablette {
@@ -196,6 +195,9 @@
 				margin-top: 5px;
 				font-size: 0.9rem;
 				font-weight: 300;
+        @include breakpoints_tablette {
+          font-size: 1rem;
+        }
 			}
       &__coeur {
         position: absolute;
@@ -208,10 +210,12 @@
           @include coeur;
         }
         @include breakpoints_tablette {
-          top: 180px;
+          top: 175px;
+          font-size: 1.5rem;
         }
         @include breakpoints_desktop {
-          top: 240px;
+          top: 235px;
+          font-size: 1.5rem;
         }
       }
 			& small {

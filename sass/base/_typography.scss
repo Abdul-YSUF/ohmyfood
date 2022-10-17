@@ -12,9 +12,13 @@ h2 {
     margin-left: 15px;
     @include breakpoints_tablette {
         @include flexbox;
+        font-size: 24px;
     }
 }
 
 h3 {
     font-size: 16px;
+    @include breakpoints_tablette {
+        font-size: 18px;
+    }
 }

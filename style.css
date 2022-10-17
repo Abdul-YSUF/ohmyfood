@@ -511,7 +511,7 @@
 }
 .fonctionnement__étape p {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .fonctionnement__étape:hover {
   background: #f2eafb;
@@ -605,6 +605,11 @@
   font-size: 0.9rem;
   font-weight: 300;
 }
+@media screen and (min-width: 768px) {
+  .restaurants__cartes .déscription_restaurants p {
+    font-size: 1rem;
+  }
+}
 .restaurants__cartes .déscription_restaurants__coeur {
   position: absolute;
   font-size: 1.4rem;
@@ -625,12 +630,14 @@
 }
 @media screen and (min-width: 768px) {
   .restaurants__cartes .déscription_restaurants__coeur {
-    top: 180px;
+    top: 175px;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 992px) {
   .restaurants__cartes .déscription_restaurants__coeur {
-    top: 240px;
+    top: 235px;
+    font-size: 1.5rem;
   }
 }
 .restaurants__cartes .déscription_restaurants small {
@@ -769,11 +776,17 @@ h2 {
     justify-content: center;
     text-align: center;
     align-items: center;
+    font-size: 24px;
   }
 }
 
 h3 {
   font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 18px;
+  }
 }
 
 .image {
@@ -935,10 +948,9 @@ h3 {
   align-items: center;
   border-radius: 0 15px 15px 0;
   width: 0;
-  height: 100%;
 }
 
-/*Animation Selection d'un plat*/
+/*Survol Selection d'un plat*/
 .menu:hover .slide__check-circle {
   width: 60px;
   transition-duration: 1200ms;
