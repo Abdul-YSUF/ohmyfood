@@ -1,11 +1,11 @@
 .header {
     @include flexbox;
-    height: 2.5rem;
+    height: 45px;
     margin-top: 15px;
     &__logo {
-        height: 1.6rem;
+        height: 28px;
         @include breakpoints_tablette {
-            height: 2rem;
+            height: 30px;
         }
     }
     &__fleche-retour {

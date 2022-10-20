@@ -282,33 +282,33 @@
 /*Fin d'Apparition Progressive Page Menu*/
 /*Apparition Progressive Button Commande*/
 @keyframes btn {
-  from {
-    opacity: 0%;
-    width: 0%;
+  0% {
+    opacity: 0;
+    transform: translateY(15%);
   }
-  to {
-    opacity: 100%;
-    width: 100%;
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 @-webkit-keyframes btn {
-  from {
-    opacity: 0%;
-    width: 0%;
+  0% {
+    opacity: 0;
+    transform: translateY(15%);
   }
-  to {
-    opacity: 100%;
-    width: 100%;
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 @-moz-keyframes btn {
-  from {
-    opacity: 0%;
-    width: 0%;
+  0% {
+    opacity: 0;
+    transform: translateY(15%);
   }
-  to {
-    opacity: 100%;
-    width: 100%;
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 /*Fin d'Apparition Progressive Button Commande*/
@@ -317,15 +317,15 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  height: 2.5rem;
+  height: 45px;
   margin-top: 15px;
 }
 .header__logo {
-  height: 1.6rem;
+  height: 28px;
 }
 @media screen and (min-width: 768px) {
   .header__logo {
-    height: 2rem;
+    height: 30px;
   }
 }
 .header__fleche-retour {
@@ -342,7 +342,7 @@
   text-align: center;
   align-items: center;
   background: linear-gradient(#CBCBCB -1%, #EAEAEA 7%);
-  height: 3rem;
+  height: 50px;
 }
 .formulaire .fa-map-marker-alt {
   font-size: 14px;
@@ -351,7 +351,7 @@
 .formulaire input:disabled {
   background: transparent;
   border: none;
-  height: 3rem;
+  height: 50px;
   cursor: text;
   margin-left: 20px;
 }
@@ -474,17 +474,10 @@
   border-radius: 20px;
   margin: 12px 0px 12px 0px;
   position: relative;
-  padding: 1.4rem;
+  padding: 24px;
   cursor: pointer;
   box-shadow: 0px 5px 10px #E2E2E2;
   transition: transform 500ms, background-color 400ms;
-}
-@media screen and (min-width: 992px) {
-  .fonctionnement__étape {
-    width: 28%;
-    margin: 30px;
-    padding: 1.8rem;
-  }
 }
 @media screen and (min-width: 768px) {
   .fonctionnement__étape {
@@ -492,17 +485,24 @@
     margin: 20px;
   }
 }
+@media screen and (min-width: 992px) {
+  .fonctionnement__étape {
+    width: 28%;
+    margin: 30px;
+    padding: 28px;
+  }
+}
 .fonctionnement__étape span {
-  width: 1.4rem;
-  height: 1.4rem;
-  font-size: 0.7rem;
+  width: 25px;
+  height: 25px;
+  font-size: 12px;
   text-align: center;
   color: white;
   background-color: #9356DC;
-  padding: 0.3rem;
+  padding: 6px;
   border-radius: 50%;
   position: absolute;
-  left: -0.7rem;
+  left: -12px;
 }
 .fonctionnement__étape i {
   color: #7D7D7D;
@@ -530,12 +530,12 @@
 /*Cartes Restaurants*/
 .restaurants {
   background: #F6F6F6;
-  padding: 3rem 0rem 2rem 0rem;
+  padding: 50px 0px 40px 0px;
   margin-top: 50px;
 }
 @media screen and (min-width: 768px) {
   .restaurants {
-    padding: 3rem 0rem 2.5rem 0rem;
+    padding: 50px 0px 45px 0px;
   }
 }
 .restaurants__cartes {
@@ -602,17 +602,17 @@
 }
 .restaurants__cartes .déscription_restaurants p {
   margin-top: 5px;
-  font-size: 0.9rem;
+  font-size: 15px;
   font-weight: 300;
 }
 @media screen and (min-width: 768px) {
   .restaurants__cartes .déscription_restaurants p {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 .restaurants__cartes .déscription_restaurants__coeur {
   position: absolute;
-  font-size: 1.4rem;
+  font-size: 24px;
   right: 20px;
   top: 170px;
   transition: color 600ms linear;
@@ -630,14 +630,14 @@
 }
 @media screen and (min-width: 768px) {
   .restaurants__cartes .déscription_restaurants__coeur {
-    top: 175px;
-    font-size: 1.5rem;
+    top: 180px;
+    font-size: 26px;
   }
 }
 @media screen and (min-width: 992px) {
   .restaurants__cartes .déscription_restaurants__coeur {
-    top: 235px;
-    font-size: 1.5rem;
+    top: 240px;
+    font-size: 26px;
   }
 }
 .restaurants__cartes .déscription_restaurants small {
@@ -761,12 +761,12 @@ a {
 
 h1 {
   width: 70%;
-  font-size: 1.4rem;
+  font-size: 22px;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 10px;
   margin-left: 15px;
 }
@@ -776,12 +776,12 @@ h2 {
     justify-content: center;
     text-align: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 17px;
 }
 @media screen and (min-width: 768px) {
   h3 {
@@ -825,7 +825,7 @@ h3 {
 }
 @media screen and (min-width: 992px) {
   .restaurant h5 {
-    margin-left: 45px;
+    margin-left: 50px;
   }
 }
 .restaurant .coeur {
@@ -872,6 +872,11 @@ h3 {
   width: 40px;
   height: 25px;
 }
+@media screen and (min-width: 992px) {
+  .catégorie h3 {
+    margin-left: 18px;
+  }
+}
 @media screen and (min-width: 768px) {
   .catégorie .column {
     display: flex;
@@ -901,13 +906,13 @@ h3 {
   transition-duration: 800ms;
 }
 .menu.animation_1 {
-  animation: délais 1s ease-in-out;
-}
-.menu.animation_2 {
   animation: délais 2s ease-in-out;
 }
-.menu.animation_3 {
+.menu.animation_2 {
   animation: délais 3s ease-in-out;
+}
+.menu.animation_3 {
+  animation: délais 4s ease-in-out;
 }
 .menu__listes {
   white-space: nowrap;
@@ -956,11 +961,12 @@ h3 {
   transition-duration: 1200ms;
 }
 
+/*Button Commande*/
 .commande {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
   padding: 5px 0px 0 0;
-  animation: btn 3s ease-in-out;
+  animation: btn 4s ease-in-out;
 }

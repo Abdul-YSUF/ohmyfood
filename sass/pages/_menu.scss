@@ -28,7 +28,7 @@
               font-size: 30px;
           }
           @include breakpoints_desktop {
-              margin-left: 45px;
+              margin-left: 50px;
           }
       }
       & .coeur {
@@ -63,6 +63,9 @@
       border-bottom: 3px solid $color-tertiaire;
       width: 40px;
       height: 25px;
+      @include breakpoints_desktop {
+        margin-left: 18px;
+      }
   }
   & .column {
     @include breakpoints_tablette {
@@ -92,13 +95,13 @@
       transition-duration: 800ms;
     }
     &.animation_1 {
-      animation: délais 1s ease-in-out;
-    }
-    &.animation_2 {
       animation: délais 2s ease-in-out;
     }
-    &.animation_3 {
+    &.animation_2 {
       animation: délais 3s ease-in-out;
+    }
+    &.animation_3 {
+      animation: délais 4s ease-in-out;
     }
     &__listes {
       white-space: nowrap;
@@ -145,8 +148,9 @@
     transition-duration: 1200ms;
   }
 
+  /*Button Commande*/
   .commande {
     @include flexbox;
     padding: 5px 0px 0 0;
-    animation: btn 3s ease-in-out;
+    animation: btn 4s ease-in-out;
   }
