@@ -3,18 +3,18 @@
     background: $background-form;
     height: 50px;
     .fa-map-marker-alt {
-        font-size: 14px;
-        margin-left: 50px;
+        font-size: 16px;
+        padding-bottom: 5px;
     }
     input:disabled {
         background: transparent;
         border: none;
         height: 50px;
         cursor: text;
-        margin-left: 20px;
+        margin-left: 15px;
         &::placeholder {
             color: $color-black;
-            font-size: 14px;
+            font-size: 15px;
             @include breakpoints_desktop {
                 font-size: 16px;
             }
