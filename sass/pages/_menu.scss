@@ -142,15 +142,17 @@
     }
   }
 
-  /*Survol Selection d'un plat*/
-  .menu:hover .slide__check-circle {
-    width: 60px;
-    transition-duration: 1200ms;
-  }
+/*Survol Selection d'un plat*/
+.menu:hover .slide__check-circle {
+  width: 60px;
+  transition-duration: 1200ms;
+}
+/* Fin de Survol Selection d'un plat*/
 
-  /*Button Commande*/
-  .commande {
-    @include flexbox;
-    padding: 5px 0px 0 0;
-    animation: btn 4s ease-in-out;
-  }
+/*Button Commande*/
+.commande {
+  @include flexbox;
+  padding: 5px 0px 0 0;
+  animation: btn 4s ease-in-out;
+}
+/*Fin de Button Commande*/

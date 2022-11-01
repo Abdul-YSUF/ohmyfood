@@ -17,6 +17,7 @@
         transform: none;
             @include breakpoints_desktop {
                 transform: scale(1.05);
-            }
         }
-    }/*Fin de Button Explorer et Commande*/
+    }
+}
+/*Fin de Button Explorer et Commande*/
